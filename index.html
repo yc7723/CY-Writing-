@@ -13,8 +13,9 @@
 <body>
   <header class="taskbar">
     <a class="start-button" href="#about" aria-label="回到自我介绍"><span class="start-icon">YC</span> START</a>
-    <nav aria-label="主导航"><a href="#about">ABOUT_ME.EXE</a><a href="#writing">MY_WRITING</a></nav>
+    <nav aria-label="主导航"><a href="#about">ABOUT_ME</a><a href="#writing-map">WRITING_MAP</a><a href="#selected-works">SELECTED_WORKS</a><a href="#wechat-archive">ARCHIVE</a></nav>
     <time id="clock" aria-label="当前时间">00:00</time>
+    <span class="reading-progress" aria-hidden="true"><i id="reading-progress"></i></span>
   </header>
 
   <main>
@@ -65,11 +66,86 @@
     <section class="writing-screen" id="writing">
       <div class="writing-header"><p>DIRECTORY: C:\YINUO\WRITING</p><h2>个人写作</h2><p>每个人都有自己的偏见要去翻越，不要杀死那只知更鸟</p></div>
 
-      <section class="channel wechat-channel" aria-labelledby="wechat-title">
+      <section class="writing-map" id="writing-map" aria-labelledby="writing-map-title">
+        <div class="section-heading">
+          <p>01 / WRITING MAP</p>
+          <h3 id="writing-map-title">我在写什么？</h3>
+          <p>从观察自己开始，经过世界，最后抵达对爱的想象。</p>
+        </div>
+        <div class="theme-grid">
+          <article class="window theme-card theme-self">
+            <div class="titlebar purple-titlebar"><span>FOLDER_01</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+            <div class="theme-body"><span class="theme-number">01</span><div><h4>观察自己</h4><p>我的脑袋每天都在超负荷运转。</p><small>自我剖白 / 敏感 / 成长</small></div></div>
+            <a href="#feature-01">OPEN FOLDER &gt;</a>
+          </article>
+          <article class="window theme-card theme-world">
+            <div class="titlebar teal-titlebar"><span>FOLDER_02</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+            <div class="theme-body"><span class="theme-number">02</span><div><h4>观察世界</h4><p>其实与人交往就是照镜子。</p><small>城市 / 异乡 / 日常观察</small></div></div>
+            <a href="#feature-02">OPEN FOLDER &gt;</a>
+          </article>
+          <article class="window theme-card theme-love">
+            <div class="titlebar pink-titlebar"><span>FOLDER_03</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+            <div class="theme-body"><span class="theme-number">03</span><div><h4>观察对爱的想象</h4><p>人还是在爱人的时候最美。</p><small>关系 / 记忆 / 情感叙事</small></div></div>
+            <a href="#feature-03">OPEN FOLDER &gt;</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="selected-works" id="selected-works" aria-labelledby="selected-title">
+        <div class="section-heading selected-heading">
+          <p>02 / SELECTED WORKS</p>
+          <h3 id="selected-title">五篇重点作品</h3>
+          <p>先从这五篇开始认识我的写作。</p>
+        </div>
+
+        <article class="window feature-card feature-purple" id="feature-01">
+          <div class="titlebar purple-titlebar"><span>WECHAT_FEATURE_01 — 我的缺点</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+          <div class="feature-layout">
+            <div class="feature-copy"><p class="feature-meta">自我剖白 / 观察自己</p><h4>我的缺点</h4><p>我的脑袋每天都在超负荷运转，其实能干成的事情不多，但它就是不断地在和我对话，一言以蔽之，这就是胡思乱想。</p><p>我会突然开始思考死亡，然后逃避真正的死亡对我来说意味着什么；我会一边认可一边否定，最后觉得每个人都有自己的偏见要去翻越，我好像不知不觉杀死了一只自己门前的知更鸟。</p><a href="https://mp.weixin.qq.com/s/qcNCHvalcLeUSaS_3Dq7jw" target="_blank" rel="noopener noreferrer">阅读原文 OPEN ARTICLE ↗</a></div>
+            <aside><strong>001</strong><p>面试的时候，面试官让我分别说一个自己的优缺点。</p></aside>
+          </div>
+        </article>
+
+        <article class="window feature-card feature-teal" id="feature-02">
+          <div class="titlebar teal-titlebar"><span>WECHAT_FEATURE_02 — 哥谭生存日记</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+          <div class="feature-layout">
+            <div class="feature-copy"><p class="feature-meta">异乡生活记录 / 观察世界</p><h4>哥谭生存日记</h4><p>所以我只能不断地告诉自己，这个世界上没有什么是一定会存在的，没有什么是肯定会发生的。考究一个事情的时候，不要只看现在和以后，因为过去发生的一切都会在不经意间产生很长远的影响。</p><p>你说过了一年我的英语有多好吗，其实也没有，但我现在已经会把 Hi How are you 连在一起说了，很难形容这是一种怎么样的成就。</p><a href="https://mp.weixin.qq.com/s/JkiIHciZ-Miv3WQMwfYS2g" target="_blank" rel="noopener noreferrer">阅读原文 OPEN ARTICLE ↗</a></div>
+            <aside><strong>002</strong><p>纽约年记。</p></aside>
+          </div>
+        </article>
+
+        <article class="window feature-card feature-pink" id="feature-03">
+          <div class="titlebar pink-titlebar"><span>WECHAT_FEATURE_03 — 菩提与银杏叶</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+          <div class="feature-layout">
+            <div class="feature-copy"><p class="feature-meta">友情 / 观察对爱的想象</p><h4>菩提与银杏叶</h4><p>我说，我不是，我只是商大树下的银杏叶，我是其中一片。</p><p>“我会把你捡起来的。”我记得甜甜这样说。做银杏叶本没什么不好，可得被有心人拾起，珍之慎之，当是幸事。</p><a href="https://mp.weixin.qq.com/s/D50vowBqFj29E-VYbqAe7g" target="_blank" rel="noopener noreferrer">阅读原文 OPEN ARTICLE ↗</a></div>
+            <aside><strong>003</strong><p>今年是我和甜甜做朋友的第 12 年。</p></aside>
+          </div>
+        </article>
+
+        <article class="window feature-card feature-teal" id="feature-04">
+          <div class="titlebar teal-titlebar"><span>WECHAT_FEATURE_04 — 我的三年</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+          <div class="feature-layout">
+            <div class="feature-copy"><p class="feature-meta">阶段记录 / 观察自己</p><h4>我的三年</h4><p>人的一生有几个三年呢？21 年，我有 7 个。所以在我现有的人生里，就协已经占据了 1/7。</p><p>以前对毕业总是觉得遥不可及，什么时候穿学士服呢，什么时候为毕业论文焦头烂额呢。直到刷到老部长毕业照的时候，我才突然觉得，原来我也要毕业了。</p><a href="https://mp.weixin.qq.com/s/JeJw3beFupR-4aktudW27Q" target="_blank" rel="noopener noreferrer">阅读原文 OPEN ARTICLE ↗</a></div>
+            <aside><strong>004</strong><p>每当我觉得大学时候做的学生工作没有意义，我就会回来找那一点本不需要寻找的意义。</p></aside>
+          </div>
+        </article>
+
+        <article class="window feature-card feature-purple" id="feature-05">
+          <div class="titlebar purple-titlebar"><span>WECHAT_FEATURE_05 — 长夜难明也可以做梦</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
+          <div class="feature-layout">
+            <div class="feature-copy"><p class="feature-meta">读后感 / 观察世界</p><h4>长夜难明也可以做梦</h4><p>一个一无所有的大学生，怎么要讲这些东西。但我真的是这么想的，未来也希望会是。平凡人也可以有平凡生活的英雄梦想，是不是？</p><p>实现不了的也可以叫理想，现实再残酷，也有人在坚持理想。</p><a href="https://mp.weixin.qq.com/s/0wc8rIxQw-Iy3hNH_yFchg" target="_blank" rel="noopener noreferrer">阅读原文 OPEN ARTICLE ↗</a></div>
+            <aside><strong>005</strong><p>初中以后写作第一次得到正面评价，结果是在会计学院的语文课上。</p></aside>
+          </div>
+        </article>
+      </section>
+
+      <section class="channel wechat-channel" id="wechat-archive" aria-labelledby="wechat-title">
         <div class="window channel-window">
           <div class="titlebar blue-titlebar"><span>WECHAT_ARTICLES — 东71街日记</span><div class="window-controls" aria-hidden="true"><i>_</i><i>□</i><i>×</i></div></div>
           <div class="toolbar"><button type="button">File</button><button type="button">Edit</button><button type="button">View</button><span>11 objects</span></div>
           <div class="channel-intro"><div class="folder-icon" aria-hidden="true">▰</div><div><p class="system-label">WECHAT OFFICIAL ACCOUNT</p><h3 id="wechat-title">东71街日记</h3><p>个人随笔：敏感是天赋吗？还是枷锁。点击文件名，在新窗口打开原文。</p></div></div>
+          <details class="archive-details">
+            <summary><span>查看全部 11 篇文章</span><small>OPEN ARCHIVE ＋</small></summary>
           <div class="file-list" role="list">
             <a role="listitem" href="https://mp.weixin.qq.com/s/qcNCHvalcLeUSaS_3Dq7jw" target="_blank" rel="noopener noreferrer"><span>01</span><strong>我的缺点</strong><small>.DOC ↗</small></a>
             <a role="listitem" href="https://mp.weixin.qq.com/s/cylw8yg3wQjwsF5LzbM2Fw" target="_blank" rel="noopener noreferrer"><span>02</span><strong>旧台球故事</strong><small>.DOC ↗</small></a>
@@ -83,6 +159,7 @@
             <a role="listitem" href="https://mp.weixin.qq.com/s/Sls3EHTa_uPCTPWRWNzf8g" target="_blank" rel="noopener noreferrer"><span>10</span><strong>The Lonely Mountain</strong><small>.DOC ↗</small></a>
             <a role="listitem" href="https://mp.weixin.qq.com/s/0wc8rIxQw-Iy3hNH_yFchg" target="_blank" rel="noopener noreferrer"><span>11</span><strong>长夜难明也可以做梦</strong><small>.DOC ↗</small></a>
           </div>
+          </details>
           <div class="statusbar"><span>11 article files</span><span>东71街日记</span></div>
         </div>
       </section>
